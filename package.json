@@ -1,0 +1,29 @@
+{
+  "name": "discord-slashbot",
+  "version": "0.1.0",
+  "description": "Boilerplate slash command only bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ducktrshessami/discord-slashbot.git"
+  },
+  "author": "ducktrshessami",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ducktrshessami/discord-slashbot/issues"
+  },
+  "homepage": "https://github.com/ducktrshessami/discord-slashbot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.6",
+    "erlpack": "github:discord/erlpack",
+    "utf-8-validate": "^5.0.8",
+    "zlib-sync": "^0.1.7"
+  },
+  "types": "typings/index.d.ts"
+}
