@@ -1,12 +1,15 @@
-// Reply to an interaction and log the reply
+// Reply to a message and log the reply
 
 const logMessage = require("./logMessage");
 
-async function replyVerbose(interaction, options) {
-    let response = (await interaction.reply(options)) || (interaction.ephemeral ? null : await interaction.fetchReply);
-    if (response) {
-        return logMessage(response);
-    }
+function replyVerbose(message, options) {
+    return message.reply(options)
+        .then(response => response ? response : (message.fetchReply && !message.ephemeral ? message.fetchReply() : null))
+        .then(response => {
+            if (response) {
+                return logMessage(response);
+            }
+        });
 }
 
 module.exports = replyVerbose;
