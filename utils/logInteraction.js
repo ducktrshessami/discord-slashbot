@@ -11,16 +11,16 @@ function logInteraction(interaction) {
         else {
             target = `[${targetId}]`;
         }
-        console.log(`[${source}] ${interaction.user.tag} used [${interaction.commandName}] on ${target}`);
+        console.log(`[SlashBot ${source}] ${interaction.user.tag} used [${interaction.commandName}] on ${target}`);
     }
     else if (interaction.isCommand()) {
-        console.log(`[${source}] ${interaction.user.tag} used /${interaction.commandName}`);
+        console.log(`[SlashBot ${source}] ${interaction.user.tag} used /${interaction.commandName}`);
     }
     else if (interaction.isButton()) {
-        console.log(`[${source}] ${interaction.user.tag} clicked on [${interaction.customId}]`);
+        console.log(`[SlashBot ${source}] ${interaction.user.tag} clicked on [${interaction.customId}]`);
     }
     else if (interaction.isSelectMenu()) {
-        console.log(`[${source}] ${interaction.user.tag} selected [${interaction.values.join(", ")}] from [${interaction.customId}]`);
+        console.log(`[SlashBot ${source}] ${interaction.user.tag} selected [${interaction.values.join(", ")}] from [${interaction.customId}]`);
     }
     return interaction;
 }
