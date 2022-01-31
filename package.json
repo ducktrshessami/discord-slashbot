@@ -1,6 +1,6 @@
 {
   "name": "discord-slashbot",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Boilerplate slash command only bot",
   "main": "index.js",
   "scripts": {
