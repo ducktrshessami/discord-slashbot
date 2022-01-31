@@ -4,6 +4,10 @@ Object.defineProperties(SlashBot, {
     Command: {
         value: require("./lib/Command"),
         enumerable: true
+    },
+    utils: {
+        value: require("./utils"),
+        enumerable: true
     }
 });
 
