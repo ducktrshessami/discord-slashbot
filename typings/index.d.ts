@@ -32,7 +32,7 @@ declare module "discord-slashbot" {
 
             constructor(
                 name: String,
-                callback: (interaction: Discord.CommandInteraction) => void,
+                callback: (this: Command, interaction: Discord.CommandInteraction) => void,
                 options?: {
                     description?: String,
                     guildID?: Discord.Snowflake,
